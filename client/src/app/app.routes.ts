@@ -4,11 +4,11 @@ import { LoginComponent } from './auth/components/login/login.component';
 import { ForgetComponent } from './auth/components/forget/forget.component';
 
 export const routes: Routes = [
-    // { path: "", component: LoginComponent },
-    // { path: "login", component: LoginComponent },
-    // { path: "register", component: SignupComponent },
-    // { path: "login/forget", component: ForgetComponent },
-    // { path: "admin", loadChildren: () => import("./modules/admin/admin.module").then(m => m.AdminModule) },
-    // { path: "customer", loadChildren: () => import("./modules/customer/customer.module").then(m => m.CustomerModule) },
-    // { path: "**", redirectTo: "login", pathMatch: "full" }
+    { path: "", component: LoginComponent },
+    { path: "login", component: LoginComponent },
+    { path: "register", component: SignupComponent },
+    { path: "login/forget", component: ForgetComponent },
+    { path: "admin", loadChildren: () => import("./modules/admin/admin.module").then(m => m.AdminModule) },
+    { path: "customer", loadChildren: () => import("./modules/customer/customer.module").then(m => m.CustomerModule) },
+    { path: "**", redirectTo: "login", pathMatch: "full" }
 ];
