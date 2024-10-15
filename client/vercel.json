@@ -2,12 +2,12 @@
     "version": 2,
     "builds": [
       {
-        "src": "dist/client/**",
+        "src": "dist/frontend/**",
         "use": "@vercel/static-build"
       }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/browser/index.csr.html" }
+      { "src": "/(.*)", "dest": "dist/frontend/login/index.html" }
     ]
   }
   
