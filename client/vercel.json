@@ -1,13 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "dist/frontend/**",
-        "use": "@vercel/static-build"
-      }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "dist/frontend/login/index.html" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/frontend/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/$1"
+    }
+  ]
+}
