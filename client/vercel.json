@@ -7,7 +7,7 @@
       }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/frontend/index.html" }
+      { "src": "/(.*)", "dest": "/browser/index.html" }
     ]
   }
   
