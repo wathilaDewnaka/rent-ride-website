@@ -4,6 +4,7 @@ import { LoginComponent } from './auth/components/login/login.component';
 import { ForgetComponent } from './auth/components/forget/forget.component';
 
 export const routes: Routes = [
+  { path: "", component: LoginComponent },
     { path: "login", component: LoginComponent },
     { path: "register", component: SignupComponent },
     { path: "login/forget", component: ForgetComponent },
